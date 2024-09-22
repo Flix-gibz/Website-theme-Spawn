@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #1c1c1c;
+    font-family: 'Poppins';
+    max-width: 1200px;
+}
+
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+text-decoration: none;    
+color:whitesmoke;
+}
+
+nav li{
+    margin: 0 15px;
+}
+
+.Logo{
+    font-size: 1.7rem;
+    color: rgb(254, 43, 43);
+    font-weight: 700;
+    z-index: 1;
+    position: relative;
+    transition: 0.30s ease-in-out;
+    cursor: pointer;
+}
+
+.Logo:hover,
+.Logo:focus{
+    text-shadow: 0 0 0.5em rgb(254, 43, 43);
+    transform: scale(1.2em);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li a:hover{
+    color:rgb(254, 43, 43);
+    transition: 0.30s ease-in-out;
+}
+
+button{
+    color: rgb(254, 43, 43);;
+    transition: 0.30s;
+    cursor: pointer;
+    background: none;
+    border: 2px solid;
+    border-radius: 50px;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em;
+}
+
+button:hover
+button:focus{
+    border-color: rgb(254, 43, 43);;
+    color: whitesmoke;
+}
+
+.cont:hover,
+.cont:focus{
+    box-shadow: 0 0 0.5em rgb(254, 43, 43);
+    transform: translateY(-0.25em);
+}
+
+button a{
+    color:rgb(254, 43, 43);
+    font-family: 'Poppins';
+}
+
+.text{
+    color:whitesmoke;
+    text-align: center;
+    padding: 0;
+}
+
+span{
+    color: rgb(254, 43, 43);
+}
+
+#titles{
+    text-align: center;
+}
+
+.container{  
+    margin-top: 50px;
+    height: 450px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.container img{
+    width: 10%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    transition: all ease-in-out 0.5s;
+}
+
+.container img:hover{
+    width: 30%;
+    cursor: pointer;
+}
+
+footer{
+    color:whitesmoke;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.logos{
+    font-size: 1.8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+i:hover{
+    color:rgb(254, 43, 43);
+    transition: 0.30s;
+    transform: scale(1.1);
+}
+
+
+
+@media (max-widht: 800px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container img{
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+}
